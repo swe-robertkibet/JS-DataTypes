@@ -101,3 +101,17 @@ console.log(slicedStr); // Outputs: World!
 ```
 
 *If the start parameter is negative, it is treated as str.length + start. So, `slice(-6)` extracts characters from the 6th character from the end ("W") to the end of the string.*
+
+#### f.) toUpperCase() and toLowerCase()
+Returns the string with all characters converted to uppercase or lowercase.
+```
+let str = "Hello";
+console.log(str.toUpperCase()); // Outputs: HELLO
+console.log(str.toLowerCase()); // Outputs: hello
+```
+#### g.) trim()
+Removes whitespace from both ends of the string.
+```
+let str = "   Hello   ";
+console.log(str.trim()); // Outputs: Hello
+```
