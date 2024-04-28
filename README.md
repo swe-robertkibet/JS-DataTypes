@@ -2,7 +2,7 @@
 
 ## 1. Strings
 JavaScript strings are sequences of characters, represented using either single quotes (''), double quotes ("") or backticks (``). 
-They are immutable, meaning once created, their values cannot be changed. However, you can create new strings based on existing ones.
+They are immutable, meaning once created, their values cannot be changed. However, we can create new strings based on existing ones.
 
 ### Creating Strings
 ```
@@ -114,4 +114,13 @@ Removes whitespace from both ends of the string.
 ```
 let str = "   Hello   ";
 console.log(str.trim()); // Outputs: Hello
+```
+
+### String Interpolation:
+With ES6, we can use template literals for string interpolation. This allows us to embed expressions within strings.
+```
+let name = "John";
+let age = 30;
+console.log(`My name is ${name} and I am ${age} years old.`); // Outputs: My name is John and I am 30 years old.
+
 ```
