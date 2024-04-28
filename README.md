@@ -44,7 +44,7 @@ Returns the index within the calling string of the first occurrence of the speci
 let str = "Hello, World!";
 console.log(str.indexOf("World")); // Outputs: 7
 ```
-#### slice()
+#### e.) slice()
 This method is used to extract a section of a string and returns it as a new string, without modifying the original string. It takes two parameters: 
 
 1. **start:** The index at which to begin extraction. If negative, it is treated as str.length + start. If start is omitted, slice begins from index 0.
