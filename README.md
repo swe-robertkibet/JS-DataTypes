@@ -122,5 +122,61 @@ With ES6, we can use template literals for string interpolation. This allows us 
 let name = "John";
 let age = 30;
 console.log(`My name is ${name} and I am ${age} years old.`); // Outputs: My name is John and I am 30 years old.
-
 ```
+
+## 2. Boolean
+
+This data type represents a logical value, which can be either `true` or `false`. Booleans are fundamental to decision-making and control flow in programming, as they determine the conditions under which certain code blocks execute. Here's a comprehensive overview:
+
+### Boolean Values:
+   - **true**: Represents the logical value of true.
+   - **false**: Represents the logical value of false.
+
+### Usage:
+**a.) Conditionals**: Booleans are frequently used in conditional statements, such as `if`, `else if`, and `else`, to control the flow of execution based on whether a condition evaluates to true or false.
+   ```
+   let x = 10;
+   if (x > 5) {
+       console.log("x is greater than 5"); // This block will execute
+   } else {
+       console.log("x is not greater than 5");
+   }
+   ```
+**b.) Logical Operators**: Booleans are also used with logical operators (`&&`, `||`, `!`) to create compound conditions and perform logical operations.
+   ```
+   let temperature = 25;
+   let isSummer = true;
+   if (temperature > 30 && isSummer) {
+       console.log("It's a hot day!"); // This block will not execute
+   }
+   ```
+
+### Boolean Functions:
+**Boolean()**: The Boolean() function can be used to explicitly convert any JavaScript value to a Boolean. The conversion rules are straightforward: empty strings, `0`, `NaN`, `null`, `undefined`, and `false` all convert to `false`, while all other values convert to `true`.
+   ```
+   console.log(Boolean("Hello")); // true
+   console.log(Boolean(0)); // false
+   console.log(Boolean({})); // true
+   ```
+
+### Boolean Object:
+JavaScript has a Boolean object that represents a wrapper around a primitive Boolean data type. However, it's rarely used in practice because it's not necessary to create Boolean objects explicitly, and it can introduce unexpected behavior due to its object nature.
+   ```
+   let boolObject = new Boolean(true);
+   console.log(boolObject.valueOf()); // true
+   ```
+
+### 5. Comparison Operators:
+Comparison operators (e.g., `==`, `===`, `!=`, `!==`, `<`, `>`, `<=`, `>=`) return Boolean values based on the comparison between two operands.
+   ```
+   console.log(5 > 3); // true
+   console.log(10 === "10"); // false (strict equality)
+   ```
+
+### 6. Truthy and Falsy Values:
+In JavaScript, values other than `true` and `false` can be evaluated as either "truthy" or "falsy" in Boolean contexts. For example, an empty string (`""`), zero (`0`), `null`, `undefined`, `NaN`, and `false` are all falsy, while all other values are considered truthy.
+   ```
+   if ("Hello") {
+       console.log("Truthy value"); // This block will execute
+   }
+   ```
